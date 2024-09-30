@@ -34,7 +34,7 @@ header {
     height: auto;
     
 }
-.bloc1 h4, .bloc2 h4, .bloc3 h4 {
+.bloc1 h2, .bloc2 h2, .bloc3 h2 {
     background-color: #FFAAAA;
     padding: 20px;
     text-align: center;
