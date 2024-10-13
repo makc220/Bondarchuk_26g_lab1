@@ -1,116 +1,126 @@
-*{
-    margin: auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
-    font-family:   sans-serif ;
+    font-family: sans-serif;
+    line-height: 1.2;
+    margin: 0;
 }
-.main-header{
+header {
     background-color: #999999;
-    height: 150px;  
+    min-height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    width: 100%;
 }
-.block-from-above{
+.block-from-above {
     background-color: #FFCCAA;
-    height: 555px;
+    min-height: 550px;
     display: flex;
-}
-.bloc1{
-    background-color: #FFAAAA;
-    width: 1170px;
-    height: auto;
-    flex-direction: column;
-}
-.bloc1-text{
-    background-color:#37C8AB;
-    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;                                                                   
     width: 100%;
 }
-.bloc2{
+.content-bloc1, .content-bloc2, .content-bloc3 {
+    max-width: 1170px;
+    margin: 0 auto;
     background-color: #FFAAAA;
-    width: 1170px;
-    height: auto;
-    flex-direction: column;
 }
-.bloc-image{
+h1, h2 {
+    font-size: 28px;
+    text-align: center;
+}
+h2 {
+    background-color: #FFAAAA;
+    padding: 20px;
+}
+.bloc1 {
+    width: 100%;
+}
+.bloc1-text {
+    background-color: #37C8AB;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    text-align: center;
+}
+.bloc2 {
+    background-color: #FFAAAA;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.bloc-image {
     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     margin-left: 10px;
-     column-gap: 23px;
-     margin-right: 14px;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px; 
+    padding-left: 5px;
+    padding-right: 5px;
 }
-.image{
+.image {
     background-color: #5599FF;
-    height: 360px;
-    width: 350px;
-}
-.descript-image{
-    background-color: #5599FF;
-    height: 360px;
-    width: 765px;
-}
-.bloc3{
-    background-color: #FFAAAA;
-    width: 1170px;
-    height: 400px;
-    flex-direction: column;
-}
-.text-admin{
-    background-color: #FFB380;
-    height: 300px;
-    width: 100%;
+    min-height: 350px;
+    min-width: 360px ;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
 }
-.footer{
+.descript-image {
+    background-color: #5599FF;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+}
+.bloc3 {
+    background-color: #FFAAAA;
+    width: 100%;
+    min-height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-admin {
+    background-color: #FFB380;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+}
+footer {
     background-color: #4D4D4D;
     color: #F9F9F9;
-    height: 400px;
+    min-height: 400px;
     display: flex;
-}
-.bloc1 h1, .bloc1 p {
-    font-weight: normal;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 5px;
-    margin-right: 10px;
+    font-size: 28px;
+    width: 100%;
 }
-.main-header h1{
-    font-weight: normal;
-    text-align: center;
-   padding: 40px;
-   line-height: 1.3;
-    
-}
-.block-from-above h1{
-    font-weight: normal;
-    text-align: center;
-}
-.bloc1-text h1{
-    font-weight: normal;
-    padding: 110px;
-}
-.bloc2 h1{
-    font-weight: normal;
-    text-align: center;
-    padding: 35px;
-}
-.bloc-image h2{
-  font-weight: normal;
-  padding: 180px 40px 0px 30px;
-}
-.descript-image h1{
-    font-weight: normal;
-    padding: 160px 80px 0px 30px;
-}
-.bloc3 h1{
-    font-weight: normal;
-    text-align: center;
-    padding: 20px 0px 10px 0px;
-    
-}
-.text-admin h1{
-    font-weight: normal;
-    text-align: center;
-}
-.footer h1{
-    font-weight: normal;
-    text-align: center;
-    line-height: 1.3;
+@media (max-width: 768px) {
+    .bloc-image {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+    .image, .descript-image {
+        width: 100%; 
+        min-width: unset; 
+    }
 }
